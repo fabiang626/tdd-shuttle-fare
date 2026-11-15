@@ -50,4 +50,8 @@ class FareCalculatorTest {
     void partOfAKmIsChargedAsAFullKm() {
         assertEquals(250, FareCalculator.fareCents(5.5, "adult"));
     }
+        @Test
+    void peakHoursAdd100CentSurcharge() {
+        assertEquals(300, FareCalculator.fareCents(3, "adult", true));
+    }
 }
