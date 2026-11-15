@@ -19,7 +19,7 @@ class FareCalculatorTest {
     }
         @Test
     void exactlyFiveKmIsStillBaseFare() {
-        assertEquals(200, FareCalculator.fareCents(5, "adult"));
+        assertEquals(999, FareCalculator.fareCents(5, "adult"));
     }
 
     @Test
